@@ -80,7 +80,7 @@ class Impl {
             return draft.setPackage(app);
         }
 
-        List<Intent> targets = new ArrayList<>();
+        List<Intent> targets = new ArrayList<Intent>();
 
         for (String clientId : getEmailClientIds()) {
             Intent target = (Intent) draft.clone();
